@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: black; /* Hot pink */
+  }
+  
+  .input-field {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: gold; /* Darker pink on hover */
+  }
+  
+  .response {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .response a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .response a:hover {
+    text-decoration: underline;
+  }
+  

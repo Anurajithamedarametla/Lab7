@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mad Libs Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MadLib Game</h1>
+  <form method="post" action="/">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" name="noun" class="input-field"><br><br>
+
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" name="adjective" class="input-field"><br><br>
+
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" name="verb" class="input-field"><br><br>
+    <label for="adverb">Adverb:</label>
+    <input type="text" id="adverb" name="adverb" class="input-field"><br><br>
+
+    <label for="place">Place:</label>
+    <input type="text" id="place" name="place" class="input-field"><br><br>
+    <input type="submit" value="Go Mad" class="submit-button">
+  </form>
+  <h1>Addendum</h1>
+  <p>
+    <b>Approach and Choices:</b><br>
+    <b>Server-Side Implementation:</b> To handle form submission and generate the mad lib result, I utilized Express.js, a popular web framework for Node.js. The server listens for POST requests on the root URL ('/') and extracts the form data using body-parser middleware.<br>
+    
+    <b>HTML and CSS Styling:</b> The HTML structure is simple, containing a form with input fields for a noun, adjective, verb, adverb, and place. I also included a footer displaying the last modified date using JavaScript. CSS styles were applied to enhance the appearance of the form and result.<br>
+    
+    <b>Result Page Styling:</b> Upon form submission, a result page is generated dynamically using a template literal in the server's response. The result is styled using a separate CSS file to maintain consistency and improve readability.<br>
+    
+    <b>Modifications Made:</b><br>
+    <b>HTML:</b> Incorporated input fields for adverb and place to enhance the mad lib experience.<br>
+    
+    <b>CSS:</b> Adjusted font sizes, colors, and layout for better visual appeal and readability. Added hover effects to buttons and links for interactivity.<br>
+    
+  <b>Server-Side Logic:</b> Updated the server.js file to handle the additional form fields and generate the mad lib accordingly. Included comments for clarity and maintainability.<br>
+    
+  <b>Conclusion</b>br>
+    By combining HTML, CSS, and Express.js, I created an interactive mad lib game where users can fill in words to generate creative stories. The project demonstrates proficiency in web development fundamentals and server-side programming using Node.js.</p>
+  <footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</body>
+</html>
